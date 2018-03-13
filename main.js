@@ -3,9 +3,9 @@ var BasicCard = require("./BasicCard.js")
 var ClozeCard = require("./ClozeCard.js")
 var inquirer = require("inquirer")
 
-var firstPresident = new BasicCard(
+var scorer = new BasicCard(
     "Who has scored the most points in an NBA game?", "Wilt Chamberlain");
-var firstPresidentCloze = new ClozeCard(
+var scorerCloze = new ClozeCard(
     "...has scored the most points in an NBA game.", "Wilt Chamberlain");
 
 var finalsMVP = new BasicCard(
@@ -50,7 +50,7 @@ var recordCloze = new ClozeCard(
     "...has the best record in a single season.", "Golden State"
 )
 
-var questions = [firstPresident, firstPresidentCloze, finalsMVP, finalsMVPCloze, billRussell, billRussellCloze, coachingTitles, coachingTitlesCloze, shortest, shortestCloze, hornets, hornetsCloze, ppg, ppgCloze, record, recordCloze]
+var questions = [scorer, scorerCloze, finalsMVP, finalsMVPCloze, billRussell, billRussellCloze, coachingTitles, coachingTitlesCloze, shortest, shortestCloze, hornets, hornetsCloze, ppg, ppgCloze, record, recordCloze]
 
 var current;
 function chooseQuestion() {
